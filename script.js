@@ -1,5 +1,5 @@
 // Carrusel de imágenes
-let imagenes = ["imagenes/1.jpg", "imagenes/2.jpg", "imagenes/3.jpg"];
+let imagenes = ["imagenes/1.jpg", "imagenes/2.jpg", "imagenes/3.jpg", "imagenes/4.jpg", "imagenes/5.jpg", "imagenes/6.jpg", "imagenes/7.jpg"];
 let index = 0;
 
 function cambiarImagen(direccion) {
