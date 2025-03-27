@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Bienvenido a Mi Tienda Online</h1>
+
+    <!-- Carrusel de imágenes -->
+    <div id="carrusel">
+        <img src="imagenes/1.jpg" id="imagen-carrusel">
+        <button onclick="cambiarImagen(-1)">⬅️</button>
+        <button onclick="cambiarImagen(1)">➡️</button>
+    </div>
+
+    <!-- Información de la tienda -->
+    <section id="info">
+        <h2>Sobre Nosotros</h2>
+        <p>Vendemos productos de calidad con envío a todo el país.</p>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section id="catalogo"></section>
+
+    <!-- Carrito de compras -->
+    <section id="carrito">
+        <h2>🛒 Carrito</h2>
+        <div id="lista-carrito"></div>
+        <button onclick="comprar()">Comprar</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
