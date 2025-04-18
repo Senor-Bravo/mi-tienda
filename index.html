@@ -1,0 +1,91 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAVO - Tienda Artesanal</title>
+    <!-- Vinculamos el archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Vinculamos el archivo JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>BRAVO - Tienda Artesanal</h1>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- Aquí agregaremos el carrusel, el apartado del creador, catálogo, cursos, etc. -->
+        <section id="contenido-dinamico">
+            <!-- Esta sección se actualizará según la opción seleccionada: Sucursal, Catálogo o Cursos -->
+        </section>
+        <!-- Carrusel de imágenes -->
+    <section id="carrusel">
+        <div class="carrusel-container">
+            <!-- Lista de imágenes -->
+            <img class="carrusel-img" src="imagenes/img0.jpg" alt="Catalogo 0">
+            <img class="carrusel-img" src="imagenes/img1.jpg" alt="Catalogo 1">
+            <img class="carrusel-img" src="imagenes/img2.jpg" alt="Catalogo 2">
+            <img class="carrusel-img" src="imagenes/img3.jpg" alt="Catalogo 3">
+            <img class="carrusel-img" src="imagenes/img4.jpg" alt="Catalogo 4">
+            <img class="carrusel-img" src="imagenes/img5.jpg" alt="Catalogo 5">
+        </div>
+
+        <!-- Botones de control -->
+        <div class="carrusel-controles">
+            <button onclick="retrocederCarrusel()">⏪</button>
+            <button onclick="detenerCarrusel()">⏸️</button>
+            <button onclick="avanzarCarrusel()">⏩</button>
+        </div>
+        </section>
+        <!-- Apartado del creador -->
+    <section id="apartado-creador">
+        <div class="contenedor-creador">
+            <img id="foto-creador" src="imagenes/creador.jpg" alt="Creador de la tienda">
+            <div class="historia-creador">
+                <h2>Sobre el Creador</h2>
+                <p>Soy el fundador de BRAVO, una tienda que nació con la idea de ofrecer productos artesanales únicos y auténticos. Gracias por visitarnos.</p>
+            </div>
+        </div>
+
+        <!-- Botones para cambiar contenido -->
+        <div class="opciones">
+            <button onclick="mostrarSucursal()">Sucursal</button>
+            <button onclick="mostrarCatalogo()">Catálogo</button>
+            <button onclick="mostrarCursos()">Cursos</button>
+        </div>
+
+        <!-- Aquí cambiaremos el contenido dinámicamente -->
+        <div id="contenido-opcion" class="caja-opciones">
+            <!-- Por defecto aparece la sucursal -->
+            <img src="imagenes/sucursal.jpg" alt="Sucursal" class="imagen-opcion">
+            <p><a href="https://maps.app.goo.gl/xsTcrSntkcFDigAP7?g_st=aw" target="_blank">Ver ubicación en Google Maps</a></p>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+        <p>Diseñado por: Alonso Rocha Rutiaga</p>
+        <div id="whatsapp">
+            <img src="imagenes/whatsapp.png" alt="WhatsApp">
+            <a href="https://wa.me/526181083385" target="_blank" class="btn-wsp-footer">
+                Contactarlo
+            </a>            
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE "Contáctanos" -->
+    <a href="https://wa.me/526182205860" target="_blank" id="btn-contactanos">
+        Contáctanos
+    </a>
+    
+    <!-- Espacio adicional para scroll -->
+    <div style="height: 300px;"></div>
+</body>
+</html>
