@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    background-image: url('imagenes/fondo.png'); /* O una URL completa */
+    background-image: url('fondo.png'); /* O una URL completa */
     background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
